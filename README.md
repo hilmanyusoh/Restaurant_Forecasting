@@ -27,13 +27,16 @@ This dataset provides sales information for Balaji Fast Food Restaurant, includi
 ## **Objective**
  To explore sales data of menu items in restaurants during day and night and predict which food and beverage items customers buy during day and night and at what price in 'Balaji Fast Food' restaurants the most.
 
+
 ## 1.Load the data: Load the CSV file into a pandas DataFrame.
 Load the CSV file into a pandas DataFrame using the pd.read_csv() function. This function reads the CSV file and creates a DataFrame, which allows for easy data manipulation and analysis.
 
-### 2.Removing rows with missing values (NaN) from the dataset
+
+## 2.Removing rows with missing values (NaN) from the dataset.
 Removing Rows with Missing Values,Remove any rows that contain missing values (NaN) from the dataset using the dropna() method. This ensures that subsequent analyses are based on complete data.
 
-## 3.Categorizing sales into daytime and nighttime
+
+## 3.Categorizing sales into daytime and nighttime.
 
 | **day_or_night** | **time_of_sale**    |
 | Daytime          | Afternoon       205 | 
@@ -44,7 +47,9 @@ Removing Rows with Missing Values,Remove any rows that contain missing values (N
 |                  | Night           205 |
 | Name: order_id, dtype: int64           |
 
-## 4.Group by time and items
+
+
+## 4.Group by time and items.
 Group the data by the newly created Time_Category and item name to aggregate sales data. This step helps to summarize the total sales amount and quantity for each item during daytime and nighttime.
                                   
 | **sales_by_time** |  **item_name** | **item_type** | **quantity** | **item_price**|                
@@ -64,6 +69,8 @@ Group the data by the newly created Time_Category and item name to aggregate sal
 |                   | Aalopuri       | Fastfood      |  467         | 20            |
 |                   | Sugarcane juice| Beverages     |  464         | 25            |
 |                   | Vadapav        | Fastfood      |  418         | 20            |
+
+
 
 ## 5.Visualize the data (Optional):
 Visualizations can provide insights into sales patterns. Using libraries like Matplotlib or Seaborn, you can create several types of plots:
