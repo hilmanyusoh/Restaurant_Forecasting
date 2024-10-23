@@ -43,6 +43,7 @@ Create a new column in the DataFrame to categorize sales as either daytime or ni
 |------------------|---------------------|
 | Daytime          | Afternoon       205 | 
 |                  | Morning         190 |
+|                  |                     | 
 | Nighttime        | Evening         201 |
 |                  | Midnight        199 |
 |                  | Night           205 |
