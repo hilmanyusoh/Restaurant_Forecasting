@@ -33,20 +33,58 @@ Load the CSV file into a pandas DataFrame using the pd.read_csv() function. This
 ### 2.Removing rows with missing values (NaN) from the dataset
 Removing Rows with Missing Values,Remove any rows that contain missing values (NaN) from the dataset using the dropna() method. This ensures that subsequent analyses are based on complete data.
 
+daytime_hours = ['Morning', 'Afternoon']
+nighttime_hours = ['Evening', 'Night']
+
+data['day_or_night'] = data['time_of_sale'].apply(lambda x: 'Daytime' if x in daytime_hours else 'Nighttime')
+
+sales_by_time = data.groupby(['day_or_night', 'time_of_sale'])['order_id'].count()
+
+sales_by_time.head()
+
 ## 3.Categorizing sales into daytime and nighttime
-Create a new column in the DataFrame to categorize sales as either daytime or nighttime based on the time of sale. This categorization allows for easier analysis of sales patterns throughout the day.
+
+day_or_night  time_of_sale
+Daytime       Afternoon       205
+              Morning         190
+Nighttime     Evening         201
+              Midnight        199
+              Night           205
+Name: order_id, dtype: int64
 
 ## 4.Group by time and items
 Group the data by the newly created Time_Category and item name to aggregate sales data. This step helps to summarize the total sales amount and quantity for each item during daytime and nighttime.
+
+                                        quantity  item_price
+sales_by_time item_name       item_type                      
+Daytime       Cold coffee     Beverages       859          40
+              Sugarcane juice Beverages       814          25
+              Panipuri        Fastfood        704          20
+              Frankie         Fastfood        682          50
+              Sandwich        Fastfood        604          60
+              Vadapav         Fastfood        588          20
+              Aalopuri        Fastfood        577          20
+Nighttime     Panipuri        Fastfood        522          20
+              Cold coffee     Beverages       502          40
+              Sandwich        Fastfood        493          60
+              Frankie         Fastfood        468          50
+              Aalopuri        Fastfood        467          20
+              Sugarcane juice Beverages       464          25
+              Vadapav         Fastfood        418          20
 
 ## 5.Visualize the data (Optional):
 Visualizations can provide insights into sales patterns. Using libraries like Matplotlib or Seaborn, you can create several types of plots:
   * 5.1 Total Sales Distribution by Time of Sale
   Visualize the overall sales distribution across different times of the day to identify peak sales periods.
+  ![alt text](image.png)
+
   * 5.2 Daytime: Menu vs Beverages
   Compare the sales of menu items against beverages during the daytime to determine which category performs better.
+  ![alt text](image-1.png)
+
   * 5.3 Nighttime: Menu vs Beverages
   Similar to daytime, analyze nighttime sales to observe differences in consumer preferences.
+  ![alt text](image-2.png)
 
 
 
