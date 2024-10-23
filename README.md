@@ -27,10 +27,10 @@ This dataset provides sales information for Balaji Fast Food Restaurant, includi
 ## **Objective**
  To explore sales data of menu items in restaurants during day and night and predict which food and beverage items customers buy during day and night and at what price in 'Balaji Fast Food' restaurants the most.
 
-## **1.Load the data: Load the CSV file into a pandas DataFrame.*
+## 1.Load the data: Load the CSV file into a pandas DataFrame.
 Load the CSV file into a pandas DataFrame using the pd.read_csv() function. This function reads the CSV file and creates a DataFrame, which allows for easy data manipulation and analysis.
 
-### **2.Removing rows with missing values (NaN) from the dataset*
+### 2.Removing rows with missing values (NaN) from the dataset
 Removing Rows with Missing Values,Remove any rows that contain missing values (NaN) from the dataset using the dropna() method. This ensures that subsequent analyses are based on complete data.
 
 ## 3.Categorizing sales into daytime and nighttime
