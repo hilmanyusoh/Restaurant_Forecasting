@@ -1,4 +1,4 @@
-# *Balaji Fast food Sales ** 
+# Balaji Fast food Sales
 
 ## **Overview** 
 - 1.Load the data: Load the CSV file into a pandas DataFrame.
