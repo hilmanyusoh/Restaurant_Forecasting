@@ -35,6 +35,24 @@ Load the CSV file into a pandas DataFrame using the pd.read_csv() function. This
 ## 2.Removing rows with missing values (NaN) from the dataset.
 Removing Rows with Missing Values,Remove any rows that contain missing values (NaN) from the dataset using the dropna() method. This ensures that subsequent analyses are based on complete data.
 
+<class 'pandas.core.frame.DataFrame'>
+Index: 893 entries, 1 to 999
+Data columns (total 10 columns):
+| #  | Column            | Non-Null Count | Dtype  | 
+|----|-------------------|----------------|--------|
+| 0   | order_id          |  893 non-null  | int64  |
+| 1   | date              |  893 non-null  | object |
+| 2   | item_name         |  893 non-null  | object |
+| 3   | item_type         |  893 non-null  | object |
+| 4   | item_price        |  893 non-null  | int64  |
+| 5   | quantity          |  893 non-null  | int64  |
+| 6   | transaction_amount|  893 non-null  | int64  |
+| 7   | transaction_type  |  893 non-null  | object |
+| 8   | received_by       |  893 non-null  | object |
+| 9   | time_of_sale      |  893 non-null  | object |
+dtypes: int64(4), object(6)
+memory usage: 76.7+ KB
+
 
 ## 3.Categorizing sales into daytime and nighttime.
 Create a new column in the DataFrame to categorize sales as either daytime or nighttime based on the time of sale. This categorization allows for easier analysis of sales patterns throughout the day.
@@ -47,7 +65,7 @@ Create a new column in the DataFrame to categorize sales as either daytime or ni
 | Nighttime        | Evening         201 |
 |                  | Midnight        199 |
 |                  | Night           205 |
-| Name: order_id, dtype: int64           |
+|    Name: order_id, dtype: int64        |
 
 
 ## 4.Group by time and items.
