@@ -50,6 +50,7 @@ Data columns (total 10 columns):
 | 7   | transaction_type  |  893 non-null  | object |
 | 8   | received_by       |  893 non-null  | object |
 | 9   | time_of_sale      |  893 non-null  | object |
+
 dtypes: int64(4), object(6)
 memory usage: 76.7+ KB
 
