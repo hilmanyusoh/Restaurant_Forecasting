@@ -38,7 +38,9 @@ Removing Rows with Missing Values,Remove any rows that contain missing values (N
 
 ## 3.Categorizing sales into daytime and nighttime.
 Create a new column in the DataFrame to categorize sales as either daytime or nighttime based on the time of sale. This categorization allows for easier analysis of sales patterns throughout the day.
+
 | **day_or_night** | **time_of_sale**    |
+|------------------|---------------------|
 | Daytime          | Afternoon       205 | 
 |                  | Morning         190 |
 |                  |                     | 
@@ -46,7 +48,6 @@ Create a new column in the DataFrame to categorize sales as either daytime or ni
 |                  | Midnight        199 |
 |                  | Night           205 |
 | Name: order_id, dtype: int64           |
-
 
 
 ## 4.Group by time and items.
