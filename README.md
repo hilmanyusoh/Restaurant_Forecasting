@@ -31,7 +31,7 @@ and night and at what price in 'Balaji Fast Food' restaurants the most.
 
 
 ## 1.Load the data: Load the CSV file into a pandas DataFrame.
-Load the CSV file into a pandas DataFrame using the pd.read_csv() function. 
+Load the CSV file into a pandas DataFrame using the `pd.read_csv()` function. 
 This function reads the CSV file and creates a DataFrame, 
 which allows for easy data manipulation and analysis.
 
@@ -39,7 +39,7 @@ which allows for easy data manipulation and analysis.
 ## 2.Removing rows with missing values (NaN) from the dataset.
 
 Removing Rows with Missing Values,Remove any rows that contain missing values (NaN) 
-from the dataset using the dropna() method. 
+from the dataset using the `dropna()` method. 
 This ensures that subsequent analyses are based on complete data.
 
 
@@ -87,7 +87,7 @@ daytime and nighttime.
 
 ## 5.Visualize the data (Optional):
 Visualizations can provide insights into sales patterns. 
-Using libraries like Matplotlib or Seaborn, you can create several types of plots:
+Using libraries like `Matplotlib` or `Seaborn`, you can create several types of plots:
   * 5.1 Total Sales Distribution by Time of Sale
   Visualize the overall sales distribution across different times 
   of the day to identify peak sales periods.
