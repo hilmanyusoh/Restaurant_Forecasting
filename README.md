@@ -36,10 +36,9 @@ Removing Rows with Missing Values,Remove any rows that contain missing values (N
 ## 3.Categorizing sales into daytime and nighttime
 
 | **day_or_night** | **time_of_sale**    |
-|------------------|---------------------|
 | Daytime          | Afternoon       205 | 
 |                  | Morning         190 |
-|------------------|---------------------|
+|                  |                     | 
 | Nighttime        | Evening         201 |
 |                  | Midnight        199 |
 |                  | Night           205 |
@@ -57,7 +56,7 @@ Group the data by the newly created Time_Category and item name to aggregate sal
 |                   | Sandwich       | Fastfood      |  604         | 60            |  
 |                   | Vadapav        | Fastfood      |  588         | 20            |
 |                   | Aalopuri       | Fastfood      |  577         | 20            |
-|-------------------|----------------|---------------|--------------|---------------|
+|                   |                |               |              |               |
 | Nighttime         | Panipuri       | Fastfood      |  522         | 20            |
 |                   | Cold coffee    | Beverages     |  502         | 40            |
 |                   | Sandwich       | Fastfood      |  493         | 60            |
